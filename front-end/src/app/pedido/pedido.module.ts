@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardapioComponent } from './cardapio/cardapio.component';
+import { PedidoComponent } from './pedido/pedido.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [CardapioComponent]
+  declarations: [PedidoComponent]
 })
-export class CardapioModule { }
+export class PedidoModule { }
