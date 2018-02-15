@@ -1,7 +1,21 @@
 <div class="container">
-  <div class="starter-template">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.
-      <br> All you get is this text and a mostly barebones HTML document.</p>
-  </div>
+  <br>
+  <br>
+  <br>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Lanche</th>
+        <th>Preço</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let comida of comidas'>
+        <td>{{comida.idcomida}}</td>
+        <td>{{comida.dsccomida}}</td>
+        <td>R$ {{comida.precocomida}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

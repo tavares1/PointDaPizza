@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import {Comida} from './comida';
 
 @Component({
   selector: 'app-cardapio',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cardapio.component.css']
 })
 export class CardapioComponent implements OnInit {
-
-  constructor() { }
+  private comidas;
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
+    let promise = this.http.get("http://localhost:3000/cardapio").toPromise()
+    promise.then(res => this.comidas = res );
   }
-
 }

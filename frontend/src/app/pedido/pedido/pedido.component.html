@@ -1,3 +1,23 @@
-<p>
-  pedido works!
-</p>
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nome Cliente</th>
+          <th>Nome Atendente</th>
+          <th>Tempo Entrega</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let pedido of pedidos'>
+          <td>{{pedido.idpedido}}</td>
+          <td>{{pedido.nomecliente}}</td>
+          <td>{{pedido.nomeatendente}}</td>
+          <td>{{pedido.tempo}} minutos</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
