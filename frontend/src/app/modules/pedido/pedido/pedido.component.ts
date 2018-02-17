@@ -12,7 +12,7 @@ export class PedidoComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    let promise = this.http.get("http://localhost:3000/pedido").toPromise()
+    const promise = this.http.get('http://localhost:3000/pedido').toPromise();
     promise.then( res => this.pedidos = res);
   }
 

@@ -12,7 +12,7 @@ export class CardapioComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    let promise = this.http.get("http://localhost:3000/cardapio").toPromise()
-    promise.then(res => this.comidas = res );
+    const promise = this.http.get('http://localhost:3000/cardapio').toPromise();
+    promise.then( res => this.comidas = res );
   }
 }
