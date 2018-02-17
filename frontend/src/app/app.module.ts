@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import {HttpClientModule,HttpClient} from '@angular/common/http';
 
 import { AppRoutingModule } from './/app-routing.module';
-import { CardapioModule } from './cardapio/cardapio.module'
-import { PedidoModule} from './pedido/pedido.module'
-
+import { CardapioModule } from './modules/cardapio/cardapio.module';
+import { PedidoModule} from './modules/pedido/pedido.module';
+import {HomeModule} from './modules/home/home.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,8 @@ import { PedidoModule} from './pedido/pedido.module'
     AppRoutingModule,
     CardapioModule,
     PedidoModule,
+    HomeModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
