@@ -8,7 +8,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { CardapioModule } from './modules/cardapio/cardapio.module';
 import { PedidoModule} from './modules/pedido/pedido.module';
 import {HomeModule} from './modules/home/home.module';
+import {LoginModule} from './modules/login/login.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
@@ -24,6 +26,7 @@ import { MenuComponent } from './components/menu/menu.component';
     PedidoModule,
     HomeModule,
     NgbModule.forRoot(),
+    LoginModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
