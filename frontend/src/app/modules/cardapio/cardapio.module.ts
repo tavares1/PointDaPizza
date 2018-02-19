@@ -8,4 +8,4 @@ import { CardapioComponent } from './cardapio/cardapio.component';
   ],
   declarations: [CardapioComponent]
 })
-export class CardapioModule { } 
+export class CardapioModule { }
