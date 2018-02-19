@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardapioComponent } from './cardapio/cardapio.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [CardapioComponent]
+  declarations: [FooterComponent]
 })
-export class CardapioModule { } 
+export class FooterModule { }

@@ -4,6 +4,7 @@ import { RouterModule,Routes } from '@angular/router';
 import { CardapioComponent } from './modules/cardapio/cardapio/cardapio.component';
 import { PedidoComponent } from './modules/pedido/pedido/pedido.component';
 import { HomeComponent } from './modules/home/home/home.component';
+import { FooterComponent } from './modules/footer/footer/footer.component';
 
 const routes : Routes = [
   {path: '', component: HomeComponent,pathMatch: 'full'},
