@@ -1,8 +1,4 @@
-a {
-    color:rgba(255,255,255,.5);
-}
-
-a:hover{
-    text-decoration: none;
-    color:rgb(201, 202, 202);
+img{
+    width: 80px;
+    height: 80px;
 }
