@@ -1,18 +1,14 @@
-<div class="container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Lanche</th>
-        <th>Preço</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor='let comida of comidas'>
-        <td>{{comida.idcomida}}</td>
-        <td>{{comida.dsccomida}}</td>
-        <td>R$ {{comida.precocomida}}</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="container-fluid">
+    <div class="row">
+        <div *ngFor="let comida of comidas" class="align-self-center col-sm-6 col-md-6 col-lg-3 col-xs-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-thumbnail" src="../../../../assets/imgs/cards/{{comida.idcomida}}.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{comida.idcomida}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">R$ {{comida.precocomida}}</h6>
+                    <p class="card-text">{{comida.dsccomida}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

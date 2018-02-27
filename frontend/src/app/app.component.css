@@ -7,6 +7,10 @@ Modificar body
 }
 */
 
-::ng-deep body{
+::ng-deep body {
     background-image: url('../assets/imgs/background.jpg');
+}
+
+app-footer {
+    padding: 80px;
 }
