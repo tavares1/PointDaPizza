@@ -1,0 +1,19 @@
+{
+  "name": "pointdapizza",
+  "version": "1.0.0",
+  "description": "Site criado para a pizzaria e esfiharia Point da Pizza.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tavares1/PointDaPizza.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tavares1/PointDaPizza/issues"
+  },
+  "homepage": "https://github.com/tavares1/PointDaPizza#readme"
+}
